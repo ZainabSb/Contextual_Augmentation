@@ -22,16 +22,4 @@ mkdir datasets
 # Copy wiki.test.raw from Google Drive to the 'wikitext-103-raw' directory
 #cp "/content/drive/MyDrive/DataAugmentation/wiki.test.raw" "datasets/wikitext-103-raw/wiki.test.raw"
 
-import shutil
-import os
-
-# Create a new 'wikitext-103-raw' directory within the 'datasets' directory
-os.makedirs('/kaggle/working/datasets/wikitext-103-raw', exist_ok=True)
-
-# Copy wiki.train.raw from Kaggle input folder to the 'wikitext-103-raw' directory
-shutil.copyfile('/kaggle/input/dataset/wiki.train.raw', '/kaggle/working/datasets/wikitext-103-raw/wiki.train.raw')
-
-# Copy wiki.test.raw from Kaggle input folder to the 'wikitext-103-raw' directory
-shutil.copyfile('/kaggle/input/dataset/wiki.test.raw', '/kaggle/working/datasets/wikitext-103-raw/wiki.test.raw')
-
 
