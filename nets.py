@@ -95,6 +95,7 @@ class BiLanguageModel(chainer.Chain):
         self.n_units = n_units
         self.n_layers = n_layers
 
+
     def add_label_condition_nets(self, n_labels, label_units):
         with self.init_scope():
             self.mlp.add_link(
